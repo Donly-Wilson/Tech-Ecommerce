@@ -337,14 +337,28 @@ input[type="number"]:focus {
   height: 250px;
   /* padding: 0px 12px; */
   overflow: hidden;
+  position: relative;
 }
 
-.right_banner img {
+.mini_banners .overlay {
+  z-index: 1;
+}
+
+.right_banner img:first-of-type {
   position: relative;
   top: -85px;
-  left: 85;
+  left: 85px;
   width: 100%;
   object-fit: cover;
+}
+
+.right_banner img:last-of-type {
+  position: absolute;
+  top: -158px;
+  left: 85px;
+  width: 65%;
+  filter: invert(1);
+  z-index: 1;
 }
 
 /* Left Mini banner */
@@ -353,15 +367,25 @@ input[type="number"]:focus {
   height: 250px;
   background: violet;
   overflow: hidden;
+  position: relative;
 }
 
-.left_banner img {
+.left_banner img:first-of-type {
   position: relative;
   left: -20px;
   top: -20px;
   width: 130%;
   height: 130%;
   object-fit: cover;
+}
+
+.left_banner img:last-of-type {
+  position: absolute;
+  top: -201px;
+  left: 85px;
+  width: 65%;
+  filter: invert(1);
+  z-index: 1;
 }
 
 /* Title */
@@ -417,8 +441,7 @@ input[type="number"]:focus {
   color: #4c4c4b;
 }
 
-.center_para {
-  /* background-color: #414141; */
+.title_para-text {
   width: 55%;
   text-align: center;
 }
