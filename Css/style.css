@@ -40,41 +40,74 @@ nav {
   padding-right: 25px;
 }
 
+/* 1st NavBar */
 .navbar1 {
   color: #999999;
   background-color: #202020;
   padding: 0.5rem 1rem;
 }
 
-.select-country img {
+.select-country {
+  cursor: context-menu;
+}
+
+.navbar1 .select-country img {
   border-radius: 2px;
   width: 21px;
   vertical-align: bottom;
 }
 
-.select-country span {
+.navbar1 .select-country span {
   font-size: 12px;
 }
-/* space between drop arrow */
-.space {
-  -webkit-text-stroke: 0.5px #f9f9f9;
-  padding: 0.5rem;
-  position: relative;
-  bottom: -2px;
+
+.navbar1 div:hover > .unselected-country {
+  display: flex;
 }
 
-.fa-user {
-  -webkit-text-stroke: 0.5px #f9f9f9;
-  padding: 0.5rem;
-  position: relative;
+.navbar1 .unselected-country {
+  position: absolute;
+  background-color: #ffffff;
+  top: 35;
+  right: 0;
+  max-width: 226px;
+  padding: 8px 10px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  display: none;
+  align-items: center;
+  z-index: 2;
 }
+
+.navbar1 .unselected-country li {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.navbar1 .unselected-country li:hover {
+  background-color: rgba(100, 100, 100, 0.1);
+  border-radius: 2px;
+}
+
+.navbar1 .unselected-country span {
+  font-size: 12px;
+}
+
+.navbar1 .unselected-country img {
+  border-radius: 2px;
+  width: 25px;
+  vertical-align: bottom;
+}
+/* 2nd NavBar */
 
 /* Menu Button */
-.hamburger {
-  border: 0px solid;
-  align-self: center;
-  cursor: pointer;
+.hamburger-menu {
   width: 33.33%;
+}
+
+.hamburger {
+  width: fit-content;
+  cursor: pointer;
 }
 
 .bar1,
@@ -92,8 +125,11 @@ nav {
   text-align: center;
   width: 33.33%;
 }
-.nameLogo {
+.storeLogo_text {
   letter-spacing: 1px;
+  width: fit-content;
+  margin: 0 auto;
+  cursor: pointer;
 }
 
 /* quickNav */
@@ -119,6 +155,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .cart-item-amount {
@@ -129,7 +166,6 @@ nav {
   background-color: #e0dfdf;
   padding: 0 3px;
   border-radius: 30%;
-  cursor: pointer;
 }
 
 .cart-info {
