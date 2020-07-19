@@ -101,11 +101,11 @@ nav {
 /* 2nd NavBar */
 
 /* Menu Button */
-.hamburger-menu {
+.hamburger-section {
   width: 33.33%;
 }
 
-.hamburger {
+.hamburger-btn {
   width: fit-content;
   cursor: pointer;
 }
@@ -120,6 +120,65 @@ nav {
   border-radius: 3px;
 }
 
+.hamburger-menu {
+  position: absolute;
+  width: 300px;
+  height: 100vh;
+  background-color: white;
+  left: 0;
+  top: 0;
+  z-index: 10;
+}
+
+.hamburger-menu nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.hamburger-menu nav p {
+  font-size: 22px;
+  font-weight: 600;
+  padding: 20px;
+}
+
+.hamburger-menu nav ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.hamburger-menu nav ul li {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  padding: 10px 10px 20px 20px;
+  position: relative;
+}
+
+.hamburger-menu_list li ul {
+  position: absolute;
+  top: 0;
+  right: -203px;
+  background-color: white;
+  padding: 10px 0;
+}
+
+.hamburger-menu_list li ul li {
+  font-size: 16px;
+  padding: 7px 60px;
+}
+
+.sub-menu ul {
+  display: none;
+}
+
+.sub-menu:hover ul {
+  display: block;
+}
+
+.sub-arrow::before {
+  content: "\f105";
+  font-family: FontAwesome;
+}
 /* Store Logo*/
 .storeLogo {
   text-align: center;
