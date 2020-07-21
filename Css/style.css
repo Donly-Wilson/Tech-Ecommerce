@@ -128,22 +128,19 @@ nav {
   left: 0;
   top: 0;
   z-index: 10;
+  transform: translateX(-300px);
 }
 
 .hamburger-menu nav {
   display: flex;
   flex-direction: column;
+  padding: 0;
 }
 
 .hamburger-menu nav p {
   font-size: 22px;
   font-weight: 600;
   padding: 20px;
-}
-
-.hamburger-menu nav ul {
-  display: flex;
-  flex-direction: column;
 }
 
 .hamburger-menu nav ul li {
@@ -157,34 +154,67 @@ nav {
 .hamburger-menu_list li ul {
   position: absolute;
   top: 0;
-  right: -203px;
+  right: -187px;
   background-color: white;
   padding: 10px 0;
 }
 
 .hamburger-menu_list li ul li {
   font-size: 16px;
-  padding: 7px 60px;
+  padding: 7px 10px 7px 60px;
 }
 
-.sub-menu ul {
-  display: none;
+.hamberger-btn_close::before {
+  content: "\f104";
+  font-family: FontAwesome;
+  padding-right: 10px;
 }
 
-.sub-menu:hover ul {
-  display: block;
+.open-menu {
+  transform: translateX(0);
 }
 
 .sub-arrow::before {
   content: "\f105";
   font-family: FontAwesome;
 }
+
+.sub-menu-large {
+  display: none;
+  right: -815px !important;
+  width: 815px;
+  height: 447px;
+}
+
+.sub-menu-large li ul {
+  position: static;
+}
+
+.sub-menu-large li ul li {
+  padding: 7px 0;
+}
+
+.sub-menu {
+  display: none;
+  width: 195px;
+}
+
+.drop-menu:hover > .sub-menu,
+.drop-menu:hover > .sub-menu-large {
+  display: block;
+}
+
+.sub-menu:hover {
+  display: block;
+}
+
 /* Store Logo*/
 .storeLogo {
   text-align: center;
   width: 33.33%;
 }
-.storeLogo_text {
+
+.storeLogo-text {
   letter-spacing: 1px;
   width: fit-content;
   margin: 0 auto;
