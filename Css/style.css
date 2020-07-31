@@ -171,7 +171,7 @@ nav {
 .hamburger-menu_list li ul li {
   font-size: 16px;
   color: #222222;
-  padding: 7px 10px 7px 60px;
+  padding: 7px 10px 7px 50px;
 }
 
 .hamberger-btn_close {
@@ -237,13 +237,13 @@ nav {
   z-index: 7;
 }
 
-.sub-menu li {
-  width: fit-content;
+.hamburger-menu_list li .sub-menu li {
+  padding: 7px 10px 7px 35px;
 }
 
-.sub-menu span {
-  margin: 0 auto;
-  justify-content: space-between;
+.sub-menu a {
+  width: fit-content;
+  position: relative;
 }
 
 .drop-menu:hover > .sub-menu,
@@ -331,6 +331,7 @@ nav {
   right: -15px;
   background-color: #f9f9f9;
   padding: 1.3rem;
+  width: 335px;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
   z-index: 1;
 }
@@ -348,9 +349,15 @@ nav {
 
 .cart-items {
   display: grid;
+  border-top: 1px solid #dfe0e1;
   grid-template-columns: 1fr 2fr;
   grid-column-gap: 1rem;
-  min-width: 250px;
+  min-width: 284px;
+  padding: 10px 5px 0 0;
+}
+
+.cart-items:first-child {
+  border-top: 10px solid #f1f1f1;
 }
 
 .cart img {
@@ -432,16 +439,18 @@ input[type="number"]:focus {
 /* scrollable cart div */
 .scroll-items {
   max-height: 350px;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
   width: fit-content;
   display: grid;
   grid-row-gap: 1rem;
-  padding-right: 30px;
+  /* padding-right: 30px; */
 }
 
 .emptyCart {
-  width: 252px;
+  border-top: 1px solid #dfe0e1;
+  width: 293px;
   text-align: center;
+  padding: 30px 0 10px;
 }
 
 .cart-item-des {
@@ -474,6 +483,11 @@ input[type="number"]:focus {
   text-transform: capitalize;
   margin-bottom: 0;
   /* color: #999999; */
+}
+
+.cart-footer-btns {
+  display: flex;
+  justify-content: space-around;
 }
 
 .checkout-btn,
@@ -1215,7 +1229,7 @@ footer {
 
 .email_list {
   /* background-color: #f5f5f5; */
-  padding: 1rem 2rem;
+  padding: 1rem 3rem 3rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1274,8 +1288,17 @@ footer {
   transition: 0.3s ease-in-out;
 }
 
+.socialinfo {
+  align-self: flex-end;
+}
+
 .socialinfo i {
   margin-left: 2rem;
+}
+
+.socialinfo p {
+  margin-left: 2rem;
+  line-height: 2;
 }
 
 .footer_info {
@@ -1305,7 +1328,7 @@ footer {
   cursor: pointer;
 }
 
-.sub-menu li::after,
+.sub-menu .drop-menu a::after,
 .sub-menu-large li div li::after,
 .footer_info li::after {
   content: "";
@@ -1325,7 +1348,7 @@ footer {
   transform: scale(0, 1);
 }
 
-.sub-menu li:hover::after,
+.sub-menu .drop-menu a:hover::after,
 .sub-menu-large li div li:hover::after,
 .footer_info li:hover::after {
   -webkit-transform: scale(1, 1);
@@ -1335,5 +1358,23 @@ footer {
 
 .subfooter {
   color: #4c4c4b;
+  background-color: #dfdfdd;
   height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.subfooter p {
+  text-align: center;
+  margin: 10px;
+}
+
+.payment {
+  display: flex;
+}
+
+.payment img {
+  width: 33px;
+  margin: 3px 10px;
 }
