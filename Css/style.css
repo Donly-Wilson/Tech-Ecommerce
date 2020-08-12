@@ -598,6 +598,7 @@ input[type="number"]:focus {
   left: 85px;
   width: 100%;
   object-fit: cover;
+  transition: transform 0.5s;
 }
 
 .right_banner img:last-of-type {
@@ -625,6 +626,7 @@ input[type="number"]:focus {
   width: 130%;
   height: 130%;
   object-fit: cover;
+  transition: transform 0.5s;
 }
 
 .left_banner img:last-of-type {
@@ -634,6 +636,11 @@ input[type="number"]:focus {
   width: 65%;
   filter: invert(1);
   z-index: 1;
+}
+
+.left_banner:hover > img:first-of-type,
+.right_banner:hover > img:first-of-type {
+  transform: scale(1.1);
 }
 
 /* Title */
@@ -1294,6 +1301,7 @@ footer {
 
 .socialinfo i {
   margin-left: 2rem;
+  cursor: pointer;
 }
 
 .socialinfo p {
