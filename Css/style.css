@@ -514,7 +514,7 @@ input[type="number"]:focus {
   height: 100vh;
   background-position: center;
   position: relative;
-  background-color: rgba(0, 0, 0, 0.5);
+  /* background-color: rgba(0, 0, 0, 0.5); */
 }
 
 .overlay {
@@ -614,7 +614,7 @@ input[type="number"]:focus {
 .left_banner {
   width: 600px;
   height: 250px;
-  background: violet;
+  /* background: violet; */
   overflow: hidden;
   position: relative;
 }
