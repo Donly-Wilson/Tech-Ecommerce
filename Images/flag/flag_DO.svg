@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="20px" viewBox="0 0 28 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Dominican Republic</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="28" height="20" rx="2"></rect>
+    </defs>
+    <g id="Flags" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-816.000000, -434.000000)">
+            <g id="Dominican-Republic" transform="translate(816.000000, 434.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <rect stroke="#F5F5F5" stroke-width="0.5" x="0.25" y="0.25" width="27.5" height="19.5" rx="2"></rect>
+                <rect id="Rectangle-2" fill="#083D7A" mask="url(#mask-2)" x="0" y="0" width="12" height="8"></rect>
+                <rect id="Rectangle-2" fill="#083D7A" mask="url(#mask-2)" x="16" y="12" width="12" height="8"></rect>
+                <rect id="Rectangle-2" fill="#DF1E35" mask="url(#mask-2)" x="0" y="12" width="12" height="8"></rect>
+                <rect id="Rectangle-2" fill="#DF1E35" mask="url(#mask-2)" x="16" y="0" width="12" height="8"></rect>
+                <path d="M14,8 C12.8954305,8 12,8.8954305 12,10 C12,11.1045695 12.8954305,12 14,12 C15.1045695,12 16,11.1045695 16,10" id="Oval-85" stroke="#0F6D1A" stroke-width="0.666666667" mask="url(#mask-2)" transform="translate(14.000000, 10.000000) rotate(-45.000000) translate(-14.000000, -10.000000) "></path>
+                <circle id="Oval-85" fill="#042F60" mask="url(#mask-2)" cx="14" cy="10" r="1"></circle>
+            </g>
+        </g>
+    </g>
+</svg>
