@@ -1,0 +1,65 @@
+@media (max-width: 767px) {
+  /* Navbar 1*/
+  .navbar1 div:last-of-type {
+    align-self: center;
+  }
+  .navbar1 .navbar_links {
+    flex-direction: column;
+  }
+  .navbar1 .navbar_links li {
+    font-size: 15px;
+  }
+  /*Mini_Banner */
+  .mini_banners .two_banner {
+    flex-direction: column;
+  }
+  /* Showcase */
+  .showcase .showcase_img .center .center_main {
+    font-size: 3rem;
+  }
+  /* Services */
+  .service_layout .services {
+    border: none;
+    display: block;
+  }
+  .service_layout .services .service2 {
+    border: none;
+    padding: 0;
+  }
+}
+
+/* Footer*/
+footer .email_list {
+  flex-direction: column;
+  padding: 1rem 0rem 3rem;
+}
+
+footer .email_list .email {
+  margin-bottom: 50px;
+}
+
+footer .email_list .email .newsletter-section {
+  width: 350px;
+}
+
+footer .email_list .socialinfo {
+  display: flex;
+  width: 100%;
+}
+
+footer .email_list .socialinfo p {
+  margin: 0;
+  width: 50%;
+}
+
+footer .footer_info {
+  flex-direction: column;
+}
+
+footer .footer_info ul {
+  display: none;
+}
+
+footer .subfooter {
+  flex-direction: column;
+}
