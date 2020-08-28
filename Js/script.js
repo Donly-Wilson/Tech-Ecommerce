@@ -253,3 +253,15 @@ function monitorCart() {
   }
   itemAmt.innerText = amtOfItem;
 }
+
+// Remove logo brands on resizing
+// function resizeEvent() {
+//   window.addEventListener("resize", () => {
+//     let brands = document.querySelector(".brands");
+//     if (screen.width <= 767) {
+//       brands.style.display = "none";
+//     } else {
+//       brands.style.display = "none";
+//     }
+//   });
+// }

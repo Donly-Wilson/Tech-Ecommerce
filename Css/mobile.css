@@ -13,6 +13,34 @@
   .mini_banners .two_banner {
     flex-direction: column;
   }
+  .mini_banners .two_banner .left_banner {
+    width: 360px;
+    height: 200px;
+    margin-bottom: 40px;
+  }
+  .mini_banners .two_banner .left_banner img:first-of-type {
+    top: -7px;
+    width: 120%;
+    height: 110%;
+  }
+  .mini_banners .two_banner .left_banner img:last-of-type {
+    top: -89px;
+    left: 56px;
+    width: 65%;
+  }
+  .mini_banners .two_banner .right_banner {
+    width: 360px;
+    height: 220px;
+  }
+  .mini_banners .two_banner .right_banner img:first-of-type {
+    top: 2px;
+    left: 51px;
+    width: 91%;
+  }
+  .mini_banners .two_banner .right_banner img:last-of-type {
+    top: -52px;
+    left: 50px;
+  }
   /* Showcase */
   .showcase .showcase_img .center .center_main {
     font-size: 3rem;
