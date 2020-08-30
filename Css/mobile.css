@@ -93,6 +93,10 @@
   .service_layout .services .service3 img {
     height: 68px;
   }
+  /*Brand*/
+  .brands .logo_brands .logo {
+    height: 90%;
+  }
   /* Footer*/
   footer .email_list {
     flex-direction: column;
@@ -121,5 +125,8 @@
   }
   footer .subfooter {
     flex-direction: column-reverse;
+  }
+  footer .subfooter p {
+    font-size: 13px;
   }
 }

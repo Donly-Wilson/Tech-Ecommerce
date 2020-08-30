@@ -254,14 +254,30 @@ function monitorCart() {
   itemAmt.innerText = amtOfItem;
 }
 
-// Remove logo brands on resizing
-// function resizeEvent() {
-//   window.addEventListener("resize", () => {
-//     let brands = document.querySelector(".brands");
-//     if (screen.width <= 767) {
-//       brands.style.display = "none";
-//     } else {
-//       brands.style.display = "none";
-//     }
-//   });
-// }
+// Remove logo brands on resizing and load
+function resizeEvent() {
+  let logos = document.querySelectorAll(".logo");
+  let logosArr = Array.from(logos);
+  let logoBrand = document.querySelector(".logo_brands");
+
+  ["resize", "load"].forEach(function (event) {
+    window.addEventListener(event, () => {
+      // 2 logos will be shown if screen width is below 767
+      if (screen.width <= 767) {
+        if (logosArr.length > 2) {
+          let twoLogos = logosArr.slice(0, 2);
+          //this is an empty array to push new logos into
+          let newLogosArr = [];
+          // loop through 'twoLogos' and add each to logoBrands
+          twoLogos.forEach((el) => {
+            newLogosArr.push(el.outerHTML);
+            logoBrand.innerHTML = newLogosArr;
+          });
+        }
+      } else {
+        logos.style.display = "block";
+      }
+    });
+  });
+}
+resizeEvent();
