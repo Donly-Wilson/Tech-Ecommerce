@@ -1,4 +1,14 @@
 @media (max-width: 767px) {
+  /* Global Styling*/
+  .title h2 {
+    font-size: 28px;
+  }
+  .title h2::after {
+    width: 50px;
+  }
+  .title h4 {
+    font-size: 16px;
+  }
   /* Navbar 1*/
   .navbar1 div:last-of-type {
     align-self: center;
@@ -46,6 +56,18 @@
     left: 50px;
   }
   /*Swiper Slider */
+  .slider1 .slider1-text h3 {
+    font-size: 21px;
+  }
+  .slider1 .slider1-text h3::after {
+    width: 42px;
+  }
+  .slider1 .slider1-text a i {
+    font-size: 12.5px;
+  }
+  .slider1 .slider1-text span {
+    font-size: 13px;
+  }
   .slider1 .vrSet {
     left: 30px;
     top: 73px;

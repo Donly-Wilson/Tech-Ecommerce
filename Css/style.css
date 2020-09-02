@@ -877,7 +877,7 @@ input[type="number"]:focus {
   /* background-color: lightcoral; */
   width: 280px;
   height: 432px;
-  margin: 1rem 1rem;
+  margin: 1rem auto;
 }
 
 .pc_photo {
