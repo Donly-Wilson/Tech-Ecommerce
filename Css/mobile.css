@@ -88,6 +88,13 @@
     left: 2px;
     height: 59%;
   }
+  .products .product_content .pc_headers ul li {
+    padding: 0;
+    font-size: 1rem;
+  }
+  .products .product_content .pc_headers ul li:nth-child(2) {
+    padding: 0 15px;
+  }
   /* Services */
   .service_layout {
     height: auto;
@@ -122,21 +129,27 @@
   /* Footer*/
   footer .email_list {
     flex-direction: column;
-    padding: 1rem 0rem 3rem;
+    padding: 1rem 2rem 1.6rem;
   }
   footer .email_list .email {
-    margin-bottom: 50px;
+    margin-bottom: 28px;
+  }
+  footer .email_list .email p {
+    line-height: 24px;
+    margin-bottom: 19px;
   }
   footer .email_list .email .newsletter-section {
     width: 350px;
   }
   footer .email_list .socialinfo {
-    display: flex;
     width: 100%;
   }
   footer .email_list .socialinfo p {
     margin: 0;
-    width: 50%;
+    text-align: center;
+  }
+  footer .email_list .socialinfo i {
+    margin-left: 2.3rem;
   }
   footer .footer_info {
     flex-direction: column;
