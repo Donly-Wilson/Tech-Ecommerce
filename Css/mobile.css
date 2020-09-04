@@ -55,6 +55,9 @@
     top: -51px;
     left: 50px;
   }
+  .title_para .title_para-text {
+    width: 75%;
+  }
   /*Swiper Slider */
   .slider1 .slider1-text h3 {
     font-size: 21px;
@@ -111,13 +114,23 @@
   .service_layout .services .service3 {
     justify-content: center;
   }
+  .service_layout .services .service1 {
+    padding: 25px 0 0;
+    border-top: 1px solid #96a4a5;
+  }
+  .service_layout .services .service1 img {
+    height: 66px;
+  }
   .service_layout .services .service2 {
     border: none;
     padding: 0;
   }
-  .service_layout .services .service1 img,
   .service_layout .services .service2 img {
     height: 66px;
+  }
+  .service_layout .services .service3 {
+    padding: 0 0 25px;
+    border-bottom: 1px solid #96a4a5;
   }
   .service_layout .services .service3 img {
     height: 68px;
