@@ -19,6 +19,16 @@
   .navbar1 .navbar_links li {
     font-size: 15px;
   }
+  /* Navbar 2*/
+  .hamburger-menu nav ul li {
+    flex-direction: column;
+  }
+  .hamburger-menu_list li ul {
+    position: unset;
+  }
+  .sub-menu-large {
+    height: auto;
+  }
   /* Showcase */
   .showcase .showcase_img .center .center_main {
     font-size: 3rem;
