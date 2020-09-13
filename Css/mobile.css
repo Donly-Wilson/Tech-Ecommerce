@@ -21,15 +21,28 @@
   }
   /* Navbar 2*/
   .navbar2 .hamburger-section .open-menu {
-    overflow-y: auto;
+    width: 100%;
+  }
+  .navbar2 .hamburger-section .hamburger-menu {
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: transparent;
+  }
+  .navbar2 .hamburger-section .hamburger-menu nav {
+    position: static;
+    background-color: #fff;
   }
   .navbar2 .hamburger-section .hamburger-menu nav ul li {
     flex-direction: column;
   }
-  .navbar2 .hamburger-section .hamburger-menu_list li ul {
+  .navbar2 .hamburger-section .hamburger-menu .sidebar-overlay {
+    width: 100px;
+    position: static;
+  }
+  .navbar2 .hamburger-section .hamburger-menu .hamburger-menu_list li ul {
     position: unset;
   }
-  .navbar2 .hamburger-section .hamburger-menu_list li .sub-menu-large {
+  .navbar2 .hamburger-section .hamburger-menu .hamburger-menu_list li .sub-menu-large {
     height: auto;
     width: auto;
   }
