@@ -30,7 +30,8 @@
   }
   .navbar2 .hamburger-section .hamburger-menu nav {
     position: static;
-    background-color: #fff;
+    overflow-y: auto;
+    background-color: #ffffff;
   }
   .navbar2 .hamburger-section .hamburger-menu nav ul li {
     flex-direction: column;
@@ -45,6 +46,9 @@
   .navbar2 .hamburger-section .hamburger-menu .hamburger-menu_list li .sub-menu-large {
     height: auto;
     width: auto;
+  }
+  .navbar2 .quickNav {
+    display: none;
   }
   /* Showcase */
   .showcase .showcase_img .center .center_main {
