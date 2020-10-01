@@ -1,13 +1,4 @@
 //Start Of Cart
-//Variables
-const cartBtn = document.querySelector(".cart-btn");
-const itemAmt = document.querySelector(".cart-item-amount");
-// const cart
-const cartContent = document.querySelector(".cart-items");
-// const cartTotal
-const checkoutBtn = document.querySelector(".checkout-btn");
-const cartDOM = document.querySelector(".cart");
-const productDOM = document.querySelector(".pc_showcase");
 
 //Remove with 'X' btn
 const removeBtn = document.getElementsByClassName("btn-remove");
@@ -229,6 +220,7 @@ sideMenu();
 
 // This will monitor the amount of item within the cart
 function monitorCart() {
+  const itemAmt = document.querySelector(".cart-item-amount");
   let allCartItems = document.getElementsByClassName("scroll-items")[0];
   let emptyCart = document.querySelector(".emptyCart");
   let cartItemRows = allCartItems.getElementsByClassName("cart-items");
