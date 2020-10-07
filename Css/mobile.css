@@ -56,17 +56,18 @@
   }
   /*Mini_Banner */
   .mini_banners .two_banner {
+    align-items: center;
     flex-direction: column;
   }
   .mini_banners .two_banner .left_banner {
+    margin-bottom: 40px;
     width: 344px;
     height: 200px;
-    margin-bottom: 40px;
   }
   .mini_banners .two_banner .left_banner img:first-of-type {
+    height: 110%;
     top: -7px;
     width: 120%;
-    height: 110%;
   }
   .mini_banners .two_banner .left_banner img:last-of-type {
     top: -84px;
