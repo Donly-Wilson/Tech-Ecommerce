@@ -171,6 +171,17 @@
   .brands .logo_brands .logo {
     height: 90%;
   }
+  .floatingMenu {
+    background-color: #efefef;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    height: 60px;
+    padding: 1rem 3rem;
+    width: 100%;
+    z-index: 9;
+  }
   /* Footer*/
   footer .email_list {
     flex-direction: column;

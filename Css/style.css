@@ -221,6 +221,10 @@ nav {
   width: 815px;
   height: 447px;
   z-index: 7;
+  /* opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s ease;
+  transform: translateY(10px); */
 }
 
 .sub-menu-large li ul {
@@ -259,6 +263,9 @@ nav {
 .drop-menu:hover > .sub-menu,
 .drop-menu:hover > .sub-menu-large {
   display: block;
+  /* pointer-events: all;
+  opacity: 1;
+  transform: translateY(10px); */
 }
 
 .sub-menu:hover {
