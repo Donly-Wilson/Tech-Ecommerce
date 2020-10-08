@@ -1,5 +1,8 @@
 @media (max-width: 767px) {
   /* Global Styling*/
+  body {
+    margin-bottom: 340px;
+  }
   .title h2 {
     font-size: 28px;
   }
@@ -198,6 +201,7 @@
     width: 350px;
   }
   footer .email_list .socialinfo {
+    text-align: center;
     width: 100%;
   }
   footer .email_list .socialinfo p {
@@ -205,7 +209,7 @@
     text-align: center;
   }
   footer .email_list .socialinfo i {
-    margin-left: 2.3rem;
+    margin: 1rem;
   }
   footer .footer_info {
     flex-direction: column;

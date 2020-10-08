@@ -63,10 +63,12 @@ nav {
 
 .navbar1 div:hover > .unselected-country {
   display: flex;
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  visibility: visible;
 }
 
 .navbar1 .unselected-country {
-  position: absolute;
   background-color: #f9f9f9;
   top: 35;
   right: 0;
@@ -74,8 +76,12 @@ nav {
   padding: 8px 10px;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  display: none;
   align-items: center;
+  transition: all 0.3s ease-in-out;
+  transform: translate3d(0, 10px, 0);
+  opacity: 0;
+  position: absolute;
+  visibility: hidden;
   z-index: 2;
 }
 
