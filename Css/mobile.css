@@ -175,15 +175,31 @@
     height: 90%;
   }
   .floatingMenu {
-    background-color: #efefef;
+    background-color: #222222;
     display: flex;
     justify-content: space-between;
     position: fixed;
     bottom: 0;
     height: 60px;
-    padding: 1rem 3rem;
+    padding: 0 1rem;
     width: 100%;
     z-index: 9;
+  }
+  .floatingMenu .link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+  }
+  .floatingMenu .link .icon img {
+    width: 60px;
+    filter: invert(1);
+  }
+  .floatingMenu .link .icon .cart {
+    width: 26px;
+  }
+  .floatingMenu .link .icon .user {
+    width: 76x;
   }
   /* Footer*/
   footer .email_list {
