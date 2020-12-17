@@ -183,7 +183,7 @@ clearBtn.onclick = function (child) {
 };
 //End Of Cart
 
-// this handler will be executed every time the hamburger-menu is clicked
+// this handler will be executed every time the HAMBURGER MENU is clicked
 
 // Variables
 let hamburgerBtn = document.querySelector(".hamburger-btn");
@@ -247,7 +247,7 @@ function monitorCart() {
 }
 
 // Remove logo brands on resizing and load
-function resizeEvent() {
+function resizeLogoEvent() {
   let logos = document.querySelectorAll(".logo");
   let logosArr = Array.from(logos);
   let logoBrand = document.querySelector(".logo_brands");
@@ -263,7 +263,8 @@ function resizeEvent() {
           // loop through 'twoLogos' and add each to logoBrands
           twoLogos.forEach((el) => {
             newLogosArr.push(el.outerHTML);
-            logoBrand.innerHTML = newLogosArr;
+            //remove comma from returned newLogosArr array  
+            logoBrand.innerHTML = newLogosArr.join('');
           });
         }
       } else {
@@ -272,4 +273,6 @@ function resizeEvent() {
     });
   });
 }
-resizeEvent();
+resizeLogoEvent();
+
+//This will show drop down menu when clicked on list 

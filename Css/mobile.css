@@ -240,4 +240,7 @@
   footer .subfooter p {
     font-size: 13px;
   }
+  footer .subfooter .payment img {
+    margin: 3px 9px;
+  }
 }
