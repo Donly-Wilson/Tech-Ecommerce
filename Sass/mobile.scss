@@ -57,6 +57,9 @@
             .sub-menu-large {
               height: auto;
               width: auto;
+              .hamburger-img {
+                display: none;
+              }
             }
           }
         }
