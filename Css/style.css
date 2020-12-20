@@ -273,10 +273,10 @@ nav {
   position: relative;
 }
 
-.drop-menu:hover > .sub-menu,
+/* .drop-menu:hover > .sub-menu,
 .drop-menu:hover > .sub-menu-large {
   display: block;
-}
+} */
 
 .sub-menu:hover {
   display: block;

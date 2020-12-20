@@ -276,3 +276,27 @@ function resizeLogoEvent() {
 resizeLogoEvent();
 
 //This will show drop down menu when clicked on list 
+function toggledDropMenu(){
+  let dropMenu = document.querySelectorAll(".drop-menu");
+  //loop through dropmenu and addEventListener
+  dropMenu.forEach((el)=>{
+    el.addEventListener('click', function(){
+      console.log(el.target);
+      // if(el.target.hasChildNodes('.sub-menu')){
+      //   el.style.display = 'none';
+      // }
+      // let subMenu = document.querySelectorAll(".sub-menu");
+      // let subMenuLarge = document.querySelectorAll(".sub-menu-large");
+      // // let allSubMenu = [subMenu, subMenuLarge];
+      // subMenu.forEach((el)=>{
+        // el.style.display === 'none' ? 'block' : 'none';
+        // el.style.display = 'block';
+        // console.log('working');
+      // })
+      // subMenuLarge.forEach((el)=>{
+      //   el.style.display === 'none' ? 'block' : 'none';
+      // })
+    })
+  })
+};
+toggledDropMenu()
