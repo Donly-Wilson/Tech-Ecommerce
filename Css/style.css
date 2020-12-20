@@ -225,6 +225,7 @@ nav {
 .sub-arrow::before {
   content: "\f105";
   font-family: FontAwesome;
+  font-style: normal;
 }
 
 .sub-menu-large {
@@ -275,9 +276,6 @@ nav {
 .drop-menu:hover > .sub-menu,
 .drop-menu:hover > .sub-menu-large {
   display: block;
-  /* pointer-events: all;
-  opacity: 1;
-  transform: translateY(10px); */
 }
 
 .sub-menu:hover {
@@ -287,6 +285,11 @@ nav {
 .main-list:hover {
   color: lightcoral;
   cursor: pointer;
+}
+
+.list_option {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* Store Logo*/
