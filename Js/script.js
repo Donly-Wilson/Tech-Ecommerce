@@ -281,7 +281,8 @@ function toggledDropMenu(){
   //loop through dropmenu and addEventListener
   dropMenu.forEach((el)=>{
     el.addEventListener('click', function(){
-      console.log(el.target);
+      document.querySelector(`${el}.sub-menu`).style.display = 'block';
+
       // if(el.target.hasChildNodes('.sub-menu')){
       //   el.style.display = 'none';
       // }
