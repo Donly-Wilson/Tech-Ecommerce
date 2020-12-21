@@ -278,22 +278,39 @@ resizeLogoEvent();
 //This will show drop down menu when clicked on list 
 function toggledDropMenu(){
   let dropMenu = document.querySelectorAll(".drop-menu");
-  //loop through dropmenu and addEventListener
-  dropMenu.forEach((el)=>{
-    el.addEventListener('click', function(){
-      document.querySelector(`${el}.sub-menu`).style.display = 'block';
+  //loop through every dropmenu class and addEventListener
+  dropMenu.forEach((element)=>{
+    //Adds click event to dropmenu
+    element.addEventListener('click', function(){
+      let allSubMenu = document.querySelectorAll(".sub-menu");
+      console.log(element.childNodes);
+      if(element.childNodes.className == 'ul.sub-menu'){
+        console.log('contains');
+      }else{
+       console.log('dont contains');
+             }
+      //loop through every sum-menu class and addEventListener
+      // allSubMenu.forEach((subMenu)=>{
+      //   if(element.contains(subMenu)){
+      //     element
+      //   }else{
+      //     console.log('dont contains');
+      //   }
 
+      // })
+      
+      // let subMenuLarge = document.querySelectorAll(".sub-menu-large");
+      // if (subMenu.style.display == "none"){
+      //   subMenu.style.display == "block"
+      // }else{
+      //   subMenu.style.display == "none"
+      // }
       // if(el.target.hasChildNodes('.sub-menu')){
       //   el.style.display = 'none';
       // }
-      // let subMenu = document.querySelectorAll(".sub-menu");
-      // let subMenuLarge = document.querySelectorAll(".sub-menu-large");
       // // let allSubMenu = [subMenu, subMenuLarge];
       // subMenu.forEach((el)=>{
         // el.style.display === 'none' ? 'block' : 'none';
-        // el.style.display = 'block';
-        // console.log('working');
-      // })
       // subMenuLarge.forEach((el)=>{
       //   el.style.display === 'none' ? 'block' : 'none';
       // })
