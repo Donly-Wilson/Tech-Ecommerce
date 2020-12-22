@@ -282,39 +282,15 @@ function toggledDropMenu(){
   dropMenu.forEach((element)=>{
     //Adds click event to dropmenu
     element.addEventListener('click', function(){
-      let allSubMenu = document.querySelectorAll(".sub-menu");
-      console.log(element.childNodes);
-      if(element.childNodes.className == 'ul.sub-menu'){
-        console.log('contains');
+      //add active class to sub-menu corresponding to dropMenu clicked
+      if(this.querySelector('.sub-menu').classList.contains('active')){
+        this.querySelector('.sub-menu').classList.remove('active');
       }else{
-       console.log('dont contains');
-             }
-      //loop through every sum-menu class and addEventListener
-      // allSubMenu.forEach((subMenu)=>{
-      //   if(element.contains(subMenu)){
-      //     element
-      //   }else{
-      //     console.log('dont contains');
-      //   }
-
-      // })
-      
-      // let subMenuLarge = document.querySelectorAll(".sub-menu-large");
-      // if (subMenu.style.display == "none"){
-      //   subMenu.style.display == "block"
-      // }else{
-      //   subMenu.style.display == "none"
-      // }
-      // if(el.target.hasChildNodes('.sub-menu')){
-      //   el.style.display = 'none';
-      // }
-      // // let allSubMenu = [subMenu, subMenuLarge];
-      // subMenu.forEach((el)=>{
-        // el.style.display === 'none' ? 'block' : 'none';
-      // subMenuLarge.forEach((el)=>{
-      //   el.style.display === 'none' ? 'block' : 'none';
-      // })
+        this.querySelector('.sub-menu').classList.add('active')
+      }
     })
+
+    
   })
 };
 toggledDropMenu()

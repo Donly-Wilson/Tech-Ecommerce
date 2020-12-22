@@ -282,6 +282,10 @@ nav {
   display: block;
 }
 
+.active {
+  display: block;
+}
+
 .main-list:hover {
   color: lightcoral;
   cursor: pointer;
