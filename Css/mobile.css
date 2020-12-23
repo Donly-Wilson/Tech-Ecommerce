@@ -134,7 +134,7 @@
     font-size: 1rem;
   }
   .products .product_content .pc_headers ul li:nth-child(2) {
-    padding: 0 15px;
+    padding: 0 8px;
   }
   /* Services */
   .service_layout {
@@ -200,9 +200,6 @@
   }
   .floatingMenu .link .icon .heart {
     width: 33px;
-  }
-  .floatingMenu .link .icon .user {
-    width: 76x;
   }
   /* Footer*/
   footer .email_list {

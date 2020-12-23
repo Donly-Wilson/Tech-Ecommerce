@@ -175,7 +175,8 @@
             padding: 0;
             font-size: 1rem;
             &:nth-child(2) {
-              padding: 0 15px;
+              // padding: 0 15px;
+              padding: 0 8px;
             }
           }
         }
@@ -253,9 +254,6 @@
         }
         .heart {
           width: 33px;
-        }
-        .user {
-          width: 76x;
         }
       }
     }
