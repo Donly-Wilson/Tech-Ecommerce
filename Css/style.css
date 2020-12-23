@@ -273,10 +273,10 @@ nav {
   position: relative;
 }
 
-/* .drop-menu:hover > .sub-menu,
+.drop-menu:hover > .sub-menu,
 .drop-menu:hover > .sub-menu-large {
   display: block;
-} */
+}
 
 /* .sub-menu:hover {
   display: block;
@@ -294,6 +294,15 @@ nav {
 .list_option {
   display: flex;
   justify-content: space-between;
+  width: 100%;
+}
+
+.list_option span {
+  font-size: 1.2rem;
+}
+
+.list_option .sub-arrow {
+  font-size: 1rem;
 }
 
 /* Store Logo*/
@@ -1372,7 +1381,7 @@ footer {
   cursor: pointer;
 }
 
-.sub-menu .drop-menu a::after,
+.sub-menu a::after,
 .sub-menu-large li div li::after,
 .footer_info li::after {
   content: "";
@@ -1392,7 +1401,7 @@ footer {
   transform: scale(0, 1);
 }
 
-.sub-menu .drop-menu a:hover::after,
+.sub-menu a:hover::after,
 .sub-menu-large li div li:hover::after,
 .footer_info li:hover::after {
   -webkit-transform: scale(1, 1);

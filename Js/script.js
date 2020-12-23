@@ -275,36 +275,39 @@ function resizeLogoEvent() {
 }
 resizeLogoEvent();
 
-//This will show drop down menu when clicked on list 
-function toggledDropMenu(){
-  let dropMenu = document.querySelectorAll(".drop-menu");
-  //loop through every dropmenu class and addEventListener
-  dropMenu.forEach((element)=>{
-    //Adds click event to dropmenu
-    element.addEventListener('click', function(){
-      //add active class to sub-menu corresponding to dropMenu clicked
-      if(this.querySelector('.sub-menu').classList.contains('active')){
-        // subMenu = document.querySelector('ul.');
-        subMenu = this.querySelector('.sub-menu > .drop-menu');
-        console.log(subMenu);
-        if(this.querySelector('.sub-menu').classList.contains('active') && 
-        this.querySelector('.sub-menu').contains(subMenu)){
-          console.log('contains both');
-        }else{
-          this.querySelector('.sub-menu').classList.remove('active');
-        }
-      }else{
-        this.querySelector('.sub-menu').classList.add('active')
-      }
-    })
+// //This will show drop down menu when clicked on list 
+// function toggledDropMenu(){
+//   let dropMenu = document.querySelectorAll(".drop-menu");
+//   //loop through every dropmenu class and addEventListener
+//   dropMenu.forEach((element)=>{
+//     //Adds click event to dropmenu
+//     element.addEventListener('click', function(){
+//       //add active class to sub-menu corresponding to dropMenu clicked
+//       if(this.querySelector('.sub-menu').classList.contains('active')){
+//         // subMenu = document.querySelector('ul.');
+//         subMenu = this.querySelector('.sub-menu > .drop-menu');
 
-    // element.addEventListener('mouseover', function(){
-    //   this.querySelector('.sub-menu').classList.add('active')
-    // })
+//         console.log(subMenu);
+//         if(this.querySelector('.sub-menu').classList.contains('active') && 
+//         this.querySelector('.sub-menu').contains(subMenu)){
+//           console.log('contains both');
+//         }else{
+//           this.querySelector('.sub-menu').classList.remove('active');
+//         }
 
-    // element.addEventListener('mouseout', function(){
-    //   this.querySelector('.sub-menu').classList.remove('active')
-    // })
-  })
-};
-toggledDropMenu()
+//       }else{
+//         this.querySelector('.sub-menu').classList.add('active')
+//       }
+//     })
+
+//     // element.addEventListener('mouseover', function(){
+//     //   this.querySelector('.sub-menu').classList.add('active')
+//     // })
+
+//     // element.addEventListener('mouseout', function(){
+//     //   this.querySelector('.sub-menu').classList.remove('active')
+//     // })
+//   })
+// };
+// toggledDropMenu();
+
