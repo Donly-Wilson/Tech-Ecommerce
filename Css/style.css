@@ -110,6 +110,15 @@ nav {
   vertical-align: bottom;
 }
 /* 2nd NavBar */
+.navbar2 {
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  -webkit-box-shadow: 0px -1px 17px -11px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px -1px 17px -11px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px -1px 17px -11px rgba(0, 0, 0, 0.75);
+}
 
 /* Menu Button */
 .hamburger-section {

@@ -103,7 +103,7 @@ function addItemToCart(name, color, price, imageSrc, size) {
   let cartDuplicateTitle = cartInfo.getElementsByClassName("cart-item-name");
   for (let i = 0; i < cartDuplicateTitle.length; i++) {
     if (cartDuplicateTitle[i].innerText == name) {
-      alert("It is working");
+      alert("Already added to your cart");
       return;
     }
   }
