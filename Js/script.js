@@ -260,15 +260,25 @@ function resizeLogoEvent() {
           let twoLogos = logosArr.slice(0, 2);
           //this is an empty array to push new logos into
           let newLogosArr = [];
-          // loop through 'twoLogos' and add each to logoBrands
+          // loop through 'twoLogos' and add each to newLogosArr
           twoLogos.forEach((el) => {
             newLogosArr.push(el.outerHTML);
-            //remove comma from returned newLogosArr array  
+            //remove comma from returned newLogosArr array and make logoBrand content equal to newLogosArr
             logoBrand.innerHTML = newLogosArr.join('');
           });
         }
       } else {
-        logos.style.display = "block";
+        //revert all logos back on larger view
+
+        //this is an empty array to push new logos into
+        let newLogosArr = [];
+        // loop through 'twoLogos' and add each to newLogosArr
+        logosArr.forEach((logo)=>{
+          logo.setAttribute('display','block')
+          newLogosArr.push(logo.outerHTML)
+          //remove comma from returned newLogosArr array and make logoBrand content equal to newLogosArr
+          logoBrand.innerHTML = newLogosArr.join('');
+        })
       }
     });
   });
