@@ -1,7 +1,9 @@
+// Width from 0 to 767px
 @media (max-width: 767px) {
   /* Global Styling*/
   body {
-    margin-bottom: 340px;
+    // margin-bottom: 340px;
+    margin-bottom: 55px;
   }
 
   .title h2 {
@@ -16,6 +18,7 @@
 
   /* Navbar 1*/
   .navbar1 {
+    padding: 0.5rem 1rem;
     div:last-of-type {
       align-self: center;
     }
@@ -29,6 +32,7 @@
 
   /* Navbar 2*/
   .navbar2 {
+    padding:1rem;
     .hamburger-section {
       .open-menu {
         width: 100%;
@@ -293,7 +297,7 @@
         display: none;
       }
     }
-    .subfooter {
+    .subfooter .container{
       flex-direction: column-reverse;
       p {
         font-size: 13px;
@@ -302,5 +306,40 @@
         margin: 3px 8px;
       }
     }
+  }
+}
+
+// Width from 576px and up
+// @media (min-width: 576px){
+//   .container {
+//       max-width: 540px;
+//   }
+// }
+
+// Width from 992px and up
+@media (min-width: 992px){
+.container {
+    max-width: 960px;
+}
+}
+
+// Width from 1200px and up
+@media (min-width: 1200px){
+.container {
+    max-width: 1140px;
+}
+}
+
+// Width from 1430px and up
+@media (min-width: 1430px){
+  // .email_list .container {
+  //   display: flex;
+  //   flex-direction: row;
+  //   justify-content: space-between;
+  //   align-items: center;
+  // }
+  .container {
+      max-width: 1400px;
+      margin:auto;
   }
 }

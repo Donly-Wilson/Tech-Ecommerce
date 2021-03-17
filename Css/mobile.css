@@ -1,7 +1,7 @@
 @media (max-width: 767px) {
   /* Global Styling*/
   body {
-    margin-bottom: 340px;
+    margin-bottom: 55px;
   }
   .title h2 {
     font-size: 28px;
@@ -13,6 +13,9 @@
     font-size: 16px;
   }
   /* Navbar 1*/
+  .navbar1 {
+    padding: 0.5rem 1rem;
+  }
   .navbar1 div:last-of-type {
     align-self: center;
   }
@@ -23,6 +26,9 @@
     font-size: 15px;
   }
   /* Navbar 2*/
+  .navbar2 {
+    padding: 1rem;
+  }
   .navbar2 .hamburger-section .open-menu {
     width: 100%;
   }
@@ -234,13 +240,32 @@
   footer .footer_info ul {
     display: none;
   }
-  footer .subfooter {
+  footer .subfooter .container {
     flex-direction: column-reverse;
   }
-  footer .subfooter p {
+  footer .subfooter .container p {
     font-size: 13px;
   }
-  footer .subfooter .payment img {
+  footer .subfooter .container .payment img {
     margin: 3px 8px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 1430px) {
+  .container {
+    max-width: 1400px;
+    margin: auto;
   }
 }

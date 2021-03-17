@@ -22,11 +22,11 @@ li {
   text-transform: capitalize;
 }
 
-nav {
+/* nav {
   display: flex;
   padding: 1rem;
   justify-content: space-between;
-}
+} */
 
 .navbar_links {
   display: flex;
@@ -41,10 +41,15 @@ nav {
 }
 
 /* 1st NavBar */
-.navbar1 {
+.nav-dark{
   color: #999999;
   background-color: #202020;
-  padding: 0.5rem 1rem;
+}
+
+.navbar1 {
+  display: flex;
+  padding: 1rem 0;
+  justify-content: space-between;
 }
 
 .fa-phone-alt:before {
@@ -110,7 +115,7 @@ nav {
   vertical-align: bottom;
 }
 /* 2nd NavBar */
-.navbar2 {
+.nav-light {
   background-color: white;
   position: sticky;
   top: 0;
@@ -118,6 +123,12 @@ nav {
   -webkit-box-shadow: 0px -1px 17px -11px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px -1px 17px -11px rgba(0, 0, 0, 0.75);
   box-shadow: 0px -1px 17px -11px rgba(0, 0, 0, 0.75);
+}
+
+.navbar2{
+  display: flex;
+  padding: 1rem 0;
+  justify-content: space-between;
 }
 
 /* Menu Button */
@@ -761,6 +772,10 @@ input[type="number"]:focus {
   min-height: 4rem;
   padding: 2rem 2rem 3.5rem !important;
 }
+.swiper-button-next, .swiper-button-prev {
+color:#222222 !important;
+}
+
 .swiper-slide {
   text-align: center;
   font-size: 17px;
@@ -1281,9 +1296,13 @@ span {
   opacity: 1;
 }
 
-footer {
+footer{
+  background-color: #d4d3d394;
+}
+
+footer.container {
   width: 100%;
-  height: 300px;
+  /* height: 300px; */
   display: flex;
   flex-direction: column;
 }
@@ -1296,7 +1315,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   line-height: 50px;
-  background-color: #d4d3d394;
+  /* background-color: #d4d3d394; */
 }
 
 .email_list h1 {
@@ -1368,7 +1387,7 @@ footer {
   display: flex;
   justify-content: space-around;
   /* background-color: #d4d3d3; */
-  background-color: #d4d3d394;
+  /* background-color: #d4d3d394; */
 }
 
 .footer_info h4 {
@@ -1418,14 +1437,18 @@ footer {
   transform: scale(1, 1);
 }
 
-.subfooter {
+.subfooter{
   color: #4c4c4b;
   background-color: #dfdfdd;
+}
+.subfooter .container {
   height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
 }
+
 
 .subfooter p {
   text-align: center;
@@ -1444,3 +1467,16 @@ footer {
 .floatingMenu {
   display: none;
 }
+
+/* .container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.swiper-container-pointer-events{
+  max-width: 1400px;
+  margin: auto;
+} */
