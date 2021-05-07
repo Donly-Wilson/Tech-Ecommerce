@@ -32,7 +32,7 @@
 
   /* Navbar 2*/
   .navbar2 {
-    padding:1rem;
+    padding: 1rem;
     .hamburger-section {
       .open-menu {
         width: 100%;
@@ -297,7 +297,7 @@
         display: none;
       }
     }
-    .subfooter .container{
+    .subfooter .container {
       flex-direction: column-reverse;
       p {
         font-size: 13px;
@@ -317,21 +317,23 @@
 // }
 
 // Width from 992px and up
-@media (min-width: 992px){
-.container {
+@media (min-width: 992px) {
+  .container {
     max-width: 960px;
-}
+    margin: auto;
+  }
 }
 
 // Width from 1200px and up
-@media (min-width: 1200px){
-.container {
+@media (min-width: 1200px) {
+  .container {
     max-width: 1140px;
-}
+    margin: auto;
+  }
 }
 
 // Width from 1430px and up
-@media (min-width: 1430px){
+@media (min-width: 1430px) {
   // .email_list .container {
   //   display: flex;
   //   flex-direction: row;
@@ -339,7 +341,7 @@
   //   align-items: center;
   // }
   .container {
-      max-width: 1400px;
-      margin:auto;
+    max-width: 1400px;
+    margin: auto;
   }
 }

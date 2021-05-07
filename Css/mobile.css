@@ -254,12 +254,14 @@
 @media (min-width: 992px) {
   .container {
     max-width: 960px;
+    margin: auto;
   }
 }
 
 @media (min-width: 1200px) {
   .container {
     max-width: 1140px;
+    margin: auto;
   }
 }
 
