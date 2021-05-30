@@ -295,7 +295,7 @@ function toggleCartMobile() {
 
   MobileCartBtn.addEventListener("click", () => {
     console.log(cartItemContainer);
-    if (cartItemContainer.style.display === "none") {
+    if (cartItemContainer.style.display !== "block") {
       cartItemContainer.style.display = "block";
       quickNav.style.display = "block";
     } else {
