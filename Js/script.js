@@ -280,6 +280,10 @@ function resizeLogoEvent() {
           //remove comma from returned newLogosArr array and make logoBrand content equal to newLogosArr
           logoBrand.innerHTML = newLogosArr.join('');
         })
+
+        //Remove 'mobileCartToggle' on larger screens
+        let quickNav = document.getElementsByClassName("quickNav")[0];
+        quickNav.classList.remove("mobileCartToggle");
       }
     });
   });
@@ -295,12 +299,8 @@ function toggleCartMobile() {
 
   MobileCartBtn.addEventListener("click", () => {
     console.log(cartItemContainer);
-    if (cartItemContainer.style.display !== "block") {
-      cartItemContainer.style.display = "block";
-      quickNav.style.display = "block";
-    } else {
-      cartItemContainer.style.display = "none";
-      quickNav.style.display = "none";
+    if (cartItemContainer) {
+      quickNav.classList.toggle("mobileCartToggle");
     }
     });
 }

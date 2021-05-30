@@ -62,7 +62,11 @@
   .navbar2 .quickNav {
     display: none;
   }
-  .navbar2 .quickNav .cart .cart-info {
+  .navbar2 .quickNav.mobileCartToggle {
+    display: block;
+  }
+  .navbar2 .quickNav.mobileCartToggle .cart .cart-info {
+    display: block;
     position: fixed;
     right: 0;
     top: 0;
@@ -70,7 +74,7 @@
     width: 100vw;
     z-index: 1;
   }
-  .navbar2 .quickNav .cart .cart-info .scroll-items {
+  .navbar2 .quickNav.mobileCartToggle .cart .cart-info .scroll-items {
     margin: auto;
   }
   /* Showcase */
