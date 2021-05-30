@@ -70,6 +70,9 @@
     width: 100vw;
     z-index: 1;
   }
+  .navbar2 .quickNav .cart .cart-info .scroll-items {
+    margin: auto;
+  }
   /* Showcase */
   .showcase .showcase_img .center .center_main {
     font-size: 3rem;
@@ -188,8 +191,11 @@
     height: 68px;
   }
   /*Brand*/
+  .brands {
+    overflow: hidden;
+  }
   .brands .logo_brands .logo {
-    height: 90%;
+    height: 80%;
   }
   .floatingMenu {
     background-color: #222222;

@@ -78,6 +78,9 @@
         height: calc(100vh - 58px);
         width: 100vw;
         z-index: 1;
+        .scroll-items {
+          margin: auto;
+        }
       }
     }
   }
@@ -237,9 +240,10 @@
 
   /*Brand*/
   .brands {
+    overflow: hidden;
     .logo_brands {
       .logo {
-        height: 90%;
+        height: 80%;
       }
     }
   }
