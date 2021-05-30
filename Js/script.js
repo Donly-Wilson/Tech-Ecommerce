@@ -3,6 +3,7 @@
 //Remove with 'X' btn
 const removeBtn = document.getElementsByClassName("btn-remove");
 
+//Call 'removeCartItem' to remove item on click
 for (i = 0; i < removeBtn.length; i++) {
   let button = removeBtn[i];
   button.addEventListener("click", removeCartItem);
@@ -284,6 +285,26 @@ function resizeLogoEvent() {
   });
 }
 resizeLogoEvent();
+
+//Open Mobile Cart
+function toggleCartMobile() {
+
+  let MobileCartBtn = document.querySelector(".cart__btn-mobile");
+  let quickNav = document.getElementsByClassName("quickNav")[0];
+  let cartItemContainer = document.getElementsByClassName("cart-info")[0];
+
+  MobileCartBtn.addEventListener("click", () => {
+    console.log(cartItemContainer);
+    if (cartItemContainer.style.display === "none") {
+      cartItemContainer.style.display = "block";
+      quickNav.style.display = "block";
+    } else {
+      cartItemContainer.style.display = "none";
+      quickNav.style.display = "none";
+    }
+    });
+}
+toggleCartMobile()
 
 // //This will show drop down menu when clicked on list 
 // function toggledDropMenu(){

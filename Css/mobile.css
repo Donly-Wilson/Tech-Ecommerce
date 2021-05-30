@@ -62,6 +62,13 @@
   .navbar2 .quickNav {
     display: none;
   }
+  .navbar2 .quickNav .cart .cart-info {
+    right: -16px;
+    top: -72px;
+    height: calc(100vh - 58px);
+    width: 100vw;
+    z-index: 1;
+  }
   /* Showcase */
   .showcase .showcase_img .center .center_main {
     font-size: 3rem;
@@ -140,7 +147,7 @@
     font-size: 1rem;
   }
   .products .product_content .pc_headers ul li:nth-child(2) {
-    padding: 0 8px;
+    margin: 0 5px;
   }
   /* Services */
   .service_layout {

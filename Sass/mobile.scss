@@ -71,6 +71,13 @@
     }
     .quickNav {
       display: none;
+      .cart .cart-info {
+        right: -16px;
+        top: -72px;
+        height: calc(100vh - 58px);
+        width: 100vw;
+        z-index: 1;
+      }
     }
   }
 
