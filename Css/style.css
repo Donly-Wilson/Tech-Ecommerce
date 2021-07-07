@@ -657,7 +657,7 @@ input[type="number"]:focus {
   z-index: 1;
 }
 
-.right_banner img:first-of-type {
+.right_banner picture:first-of-type img {
   position: relative;
   top: -85px;
   left: 85px;
@@ -666,7 +666,7 @@ input[type="number"]:focus {
   transition: transform 0.5s;
 }
 
-.right_banner img:last-of-type {
+.right_banner picture:last-of-type img {
   position: absolute;
   top: -158px;
   left: 85px;
@@ -684,7 +684,7 @@ input[type="number"]:focus {
   position: relative;
 }
 
-.left_banner img:first-of-type {
+.left_banner picture:first-of-type img {
   position: relative;
   left: -20px;
   top: -20px;
@@ -694,7 +694,7 @@ input[type="number"]:focus {
   transition: transform 0.5s;
 }
 
-.left_banner img:last-of-type {
+.left_banner picture:last-of-type img {
   position: absolute;
   top: -201px;
   left: 85px;
@@ -703,8 +703,8 @@ input[type="number"]:focus {
   z-index: 1;
 }
 
-.left_banner:hover > img:first-of-type,
-.right_banner:hover > img:first-of-type {
+.left_banner:hover > picture:first-of-type img,
+.right_banner:hover > picture:first-of-type img {
   transform: scale(1.1);
 }
 
@@ -874,6 +874,9 @@ input[type="number"]:focus {
   height: 72%;
 }
 
+.slider1 picture img {
+  height: 100%;
+}
 /* Parallax */
 .parallax {
   background-image: url("../Images/home-office.jpg");
