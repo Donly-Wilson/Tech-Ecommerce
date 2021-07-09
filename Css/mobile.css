@@ -91,12 +91,12 @@
     width: 344px;
     height: 200px;
   }
-  .mini_banners .two_banner .left_banner img:first-of-type {
+  .mini_banners .two_banner .left_banner picture:first-of-type img {
     height: 110%;
     top: -7px;
     width: 120%;
   }
-  .mini_banners .two_banner .left_banner img:last-of-type {
+  .mini_banners .two_banner .left_banner picture:last-of-type img {
     top: -84px;
     left: 56px;
     width: 65%;
@@ -105,12 +105,12 @@
     width: 344px;
     height: 200px;
   }
-  .mini_banners .two_banner .right_banner img:first-of-type {
+  .mini_banners .two_banner .right_banner picture:first-of-type img {
     top: 0px;
     left: 32px;
     width: 91%;
   }
-  .mini_banners .two_banner .right_banner img:last-of-type {
+  .mini_banners .two_banner .right_banner picture:last-of-type img {
     top: -51px;
     left: 50px;
   }
@@ -193,6 +193,17 @@
   }
   .service_layout .services .service3 img {
     height: 68px;
+  }
+  /*Blog*/
+  .slider2_content .slider2_para {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-inline-box;
+    -webkit-line-clamp: 5;
+    /*! autoprefixer: off */
+    -webkit-box-orient: vertical;
+    /* autoprefixer: on */
+    padding-bottom: 0;
   }
   /*Brand*/
   .brands {

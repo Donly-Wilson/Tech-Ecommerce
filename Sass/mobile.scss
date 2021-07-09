@@ -109,12 +109,12 @@
         margin-bottom: 40px;
         width: 344px;
         height: 200px;
-        img:first-of-type {
+        picture:first-of-type img {
           height: 110%;
           top: -7px;
           width: 120%;
         }
-        img:last-of-type {
+        picture:last-of-type img {
           top: -84px;
           left: 56px;
           width: 65%;
@@ -123,12 +123,12 @@
       .right_banner {
         width: 344px;
         height: 200px;
-        img:first-of-type {
+        picture:first-of-type img {
           top: 0px;
           left: 32px;
           width: 91%;
         }
-        img:last-of-type {
+        picture:last-of-type img {
           top: -51px;
           left: 50px;
         }
@@ -239,6 +239,20 @@
           height: 68px;
         }
       }
+    }
+  }
+
+  /*Blog*/
+  .slider2_content {
+    .slider2_para {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-inline-box;
+      -webkit-line-clamp: 5;
+      /*! autoprefixer: off */
+      -webkit-box-orient: vertical;
+      /* autoprefixer: on */
+      padding-bottom: 0;
     }
   }
 
