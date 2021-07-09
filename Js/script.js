@@ -268,6 +268,18 @@ function resizeLogoEvent() {
             logoBrand.innerHTML = newLogosArr.join('');
           });
         }
+      }else if (screen.width <= 961) {
+        if (logosArr.length > 3) {
+          let twoLogos = logosArr.slice(0, 3);
+          //this is an empty array to push new logos into
+          let newLogosArr = [];
+          // loop through 'twoLogos' and add each to newLogosArr
+          twoLogos.forEach((el) => {
+            newLogosArr.push(el.outerHTML);
+            //remove comma from returned newLogosArr array and make logoBrand content equal to newLogosArr
+            logoBrand.innerHTML = newLogosArr.join('');
+          });
+        }
       } else {
         //revert all logos back on larger view
 
