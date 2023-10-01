@@ -801,7 +801,9 @@ input[type="number"]:focus {
   height: 23rem !important;
   overflow: hidden;
 }
-
+.overflow_hidden{
+  overflow: hidden;
+}
 .swiper-container .buttons {
   display: none;
 }
