@@ -6,10 +6,12 @@ var swiper = new Swiper(".swiper-container", {
   loop: true,
   loopFillGroupWithBlank: true,
   autoplay: {
-    delay: 3700,
+    delay: 2300,
+    // delay: 0,
     disableOnInteraction: true,
     waitForTransition: true,
   },
+  speed: 3000,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
