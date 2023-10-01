@@ -64,7 +64,6 @@ function quantityChanged(event) {
 
 //Add to Cart Button
 let addToCartButton = document.querySelectorAll(".quick-add-options > ul > li");
-console.log(addToCartButton);
 
 for (i = 0; i < addToCartButton.length; i++) {
   let button = addToCartButton[i];
